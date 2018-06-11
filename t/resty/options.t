@@ -89,7 +89,7 @@ Options:
 
     -V                  Print version numbers and nginx configurations.
 
-    --dry-run           Print out the generated nginx configuration file only
+    --dump-nginx-conf   Print out the generated nginx configuration file only
                         without running the Lua code.
 
     --valgrind          Use valgrind to run nginx.
@@ -601,8 +601,8 @@ TRACE 1 IR.*? TRACE 1 mcode
 
 
 
-=== TEST 45: --dry-run
---- opts: --dry-run --errlog-level notice -e 'print(package.path)'
+=== TEST 45: --dump-nginx-conf
+--- opts: --dump-nginx-conf --errlog-level notice -e 'print(package.path)'
 --- out_like chop
 error_log stderr notice;
 --- err
