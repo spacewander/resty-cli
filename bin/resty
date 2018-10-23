@@ -907,8 +907,8 @@ Options:
 
     -V                  Print version numbers and nginx configurations.
 
-    --dump-nginx-conf   Print out the generated nginx configuration file only
-                        without running the Lua code.
+    --dump-nginx-conf   Print the generated nginx configuration file,
+                        without running nginx not the Lua code.
 
     --valgrind          Use valgrind to run nginx.
     --valgrind-opts     Pass extra options to valgrind.
